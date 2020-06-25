@@ -2,40 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
 import Faker from 'faker';
+import ApprovalCard from './ApprovalCard';
 
 const App = () => {
   return (
     <div className='ui container comments'>
-      <CommentDetail
-        author={Faker.internet.userName()}
-        time={Faker.date.weekday()}
-        text={Faker.hacker.phrase()}
-        avatar={Faker.image.avatar()}
-      />
-      <CommentDetail
-        author={Faker.internet.userName()}
-        time={Faker.date.weekday()}
-        text={Faker.hacker.phrase()}
-        avatar={Faker.image.avatar()}
-      />
-      <CommentDetail
-        author={Faker.internet.userName()}
-        time={Faker.date.weekday()}
-        text={Faker.hacker.phrase()}
-        avatar={Faker.image.avatar()}
-      />
-      <CommentDetail
-        author={Faker.internet.userName()}
-        time={Faker.date.weekday()}
-        text={Faker.hacker.phrase()}
-        avatar={Faker.image.avatar()}
-      />
-      <CommentDetail
-        author={Faker.internet.userName()}
-        time={Faker.date.weekday()}
-        text={Faker.hacker.phrase()}
-        avatar={Faker.image.avatar()}
-      />
+      <br />
+      <br />
+      <ApprovalCard>
+        <CommentDetail
+          author={Faker.internet.userName()}
+          time={Faker.date.weekday()}
+          text={Faker.hacker.phrase()}
+          avatar={Faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={Faker.internet.userName()}
+          time={Faker.date.weekday()}
+          text={Faker.hacker.phrase()}
+          avatar={Faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author={Faker.internet.userName()}
+          time={Faker.date.weekday()}
+          text={Faker.hacker.phrase()}
+          avatar={Faker.image.avatar()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
